@@ -1,0 +1,311 @@
+<!--
+Greg Corujo
+Lab5 main page
+This Webpage is the main page for a car dealership webpage
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+      
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+        /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+        .navbar {
+          margin-bottom: 50px;
+          border-radius: 0;
+        }
+
+        /* Remove the jumbotron's default bottom margin */ 
+         .jumbotron {
+          margin-bottom: 0;
+             color: firebrick;
+             background-color: white;
+             font-family: cursive
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+          background-color: #f2f2f2;
+          padding: 25px;
+        }
+        .carousel-inner img {
+          width: 100%; /* Set width to 100% */
+          margin: auto;
+          min-height:200px;
+        }
+  </style>
+  </head>
+
+  <body>
+    <div class="jumbotron text-center">
+        <div class="container">
+          <div class= "row">
+              <div class="col-sm-4">
+                <img src="images/subaru_wrx___clean_by_dangeruss.jpg" alt="" style="height:100%; width:100%;">
+              </div>
+              <div class= "col-sm-6">
+                <h1>Bob's Hyundai &amp; Subaru</h1>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="lab5_main.html">Home</a></li>
+        <li><a name="products" href="#products">Products</a></li>
+        <li><a href="#contactSales" data-toggle="modal">Contact Sales</a></li>
+        <li><a href="lab5_survey.html">Survey</a></li>
+      </ul>
+        
+        
+        <div id="contactSales" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Contact Sales</h4>
+              </div>
+                
+              <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                    <label for="pwd">Name:</label>
+                    <input type="name" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  
+                  <div class="checkbox">
+                    <label><input type="checkbox">Send me new deals</label>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                </div>
+                
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+  </div>
+</nav>
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="images/48d34f269110d5d6-main.jpg" alt="Image">
+                <div class="carousel-caption">
+                </div>      
+              </div>
+
+              <div class="item">
+                <img src="images/Subaru-Levorg-1.jpg" alt="Image">
+                <div class="carousel-caption">
+                </div>      
+              </div>
+                <div class="item">
+                <img src="images/hyundai_kona_33.jpg" alt="Image">
+                <div class="carousel-caption">
+                </div>      
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+      <br><br><br><br>
+      
+      <div class="container">
+        <h1>Welcome to Bob's Hyundai and Subaru</h1> <br>
+          <!--Text is taken from "http://www.downtownsubarunashville.com/" with some slight alterations-->
+          <p>If you're in the market for a Subaru or Hyundai, you need to come into Bob's Hyundai and Subaru today. We stock a large    selection of new and used Subaru cars at great prices. If you need assistance with choosing a new car, obtaining            financing, or have service and repair questions, our friendly and knowledgeable staff will get your questions answered.    Our dealership is located in Knoxville, but we proudly serve the Bowling Green KY, Murfreesboro and Jackson, TN area        with Hyundai and Subaru cars. Come see why we are one of the leading Subaru dealerships in Tennessee.<br><br>
+
+            If you're looking for a vehicle to drive on the streets of Downtown Knoxville in style, check out our large inventory of new Subaru vehicles featuring the new 2017-2018 Forester, Impreza, Legacy, BRZ, WRX and Crosstrek. You'll find that we have a vehicle for every need, from getting around town without having to fill the gas tank, to hauling equipment or kids! The service you'll get at Bob's Hyundai and Subaru will be 2nd to none! Call to speak to a friendly salesperson, or stop in and see us at 10915 Hardin Valley Rd in Knoxville, TN.</p><br><br><br><br>
+      </div>
+    <!------------------------------------------------------------------------------>
+    <div class="container" id="products" name="products">    
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">2017 SUBARU WRX STI</div>
+            <div class="panel-body"><img src="images/1200px-04-05_Subaru_WRX_STi_2.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#car1">More Info</button>
+                <div id="car1" class="collapse">
+                    STARTING AT: $35,195<br>
+                    Horsepower: 305 hp<br>
+                    Engine: 2.5 L 4-cylinder<br>
+                    MPG: 17 city / 23 highway<br>
+                    Curb weight: 3,391 lbs<br>
+                    Torque: 290 lb-ft
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-4"> 
+          <div class="panel panel-primary">
+            <div class="panel-heading">2017 SUBARU LEGACY</div>
+            <div class="panel-body"><img src="images/1200px-2015_Subaru_Liberty_(MY15)_3.6R_sedan_(2017-07-15)_01.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#car2">More Info</button>
+                <div id="car2" class="collapse">
+                    STARTING AT: $21,995<br>
+                    MPG: Up to 25 city / 34 highway<br>
+                    Dimensions: 189″ L x 72″ W x 59″ H<br>
+                    Horsepower: 175 to 256 hp<br>
+                    Curb weight: 3,459 to 3,697 lbs
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-4"> 
+          <div class="panel panel-primary">
+            <div class="panel-heading">2017 HYUNDAI SANTA FE</div>
+            <div class="panel-body"><img src="images/Hyundai_Tucson_2.0_CRDi_4WD_Premium_(III)_–_Frontansicht,_5._September_2015,_Düsseldorf.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#car3">More Info</button>
+                <div id="car3" class="collapse">
+                    STARTING AT: $30,800<br>
+                    MPG: Up to 18 city / 25 highway<br>
+                    Towing capacity: 5,000 lbs<br>
+                    Dimensions: 193″ L x 74″ W x 67″ H<br>
+                    Cargo volume: 13.5 ft³, 80 ft³ with seat area
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="container">    
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">2017 HYUNDAI TUSCAN</div>
+            <div class="panel-body"><img src="images/1-hyundai-ix35-main-xlarge_trans_NvBQzQNjv4BqpiVx42joSuAkZ0bE9ijUnGH28ZiNHzwg9svuZLxrn1U.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#car4">More Info</button>
+                <div id="car4" class="collapse">
+                    STARTING AT: $22,700<br>
+                    MPG: Up to 26 city / 32 highway<br>
+                    Dimensions: 176″ L x 73″ W x 65″ H<br>
+                    Towing capacity: 1,000 lbs<br>
+                    Cargo volume: 31 ft³, 61.9 ft³ with seat area
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-4"> 
+          <div class="panel panel-primary">
+            <div class="panel-heading">2017 SUBARU FORESTER</div>
+            <div class="panel-body"><img src="images/subaru_forester_2017_JF2SJAAC3HG466580_62377_284148245.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#car5">More Info</button>
+                <div id="car5" class="collapse">
+                    STARTING AT: $22,595<br>
+                    MPG: Up to 26 city / 32 highway<br>
+                    Dimensions: 182″ L x 71″ W x 66-68″ H<br>
+                    Towing capacity: 1,500 lbs<br>
+                    Cargo volume: 31.5 to 34.4 ft³, 68.5 to 74.7 ft³ with seat area
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-4"> 
+          <div class="panel panel-primary">
+            <div class="panel-heading">2018 HYUNDAI SONATA</div>
+            <div class="panel-body"><img src="IMAGES/966b69ba-33db-41e4-9a3a-3e7ed29241da.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#car6">More Info</button>
+                <div id="car6" class="collapse">
+                    STARTING AT: $21,600<br>
+                    MPG: Up to 28 city / 36 highway<br>
+                    Horsepower: 178 to 245 hp<br>
+                    Dimensions: 191″ L x 73″ W x 58″ H<br>
+                    Warranty: 5 yr/60,000 mi basic, 10 yr/100,000 mi powertrain
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div><br><br>    
+      
+      <footer class="container-fluid"> 
+          <div class="container">   
+              <h3 class="text text-center"><u>Contact Our Sales Team</u></h3>
+              <br>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Location</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10915 Hardin Valley Rd in Knoxville, TN</td>
+                    <td>865-555-5555</td>
+                    <td>bob@bobshyundaiandsubaru.com</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+        </footer>
+    </body>

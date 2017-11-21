@@ -1,0 +1,278 @@
+<!--
+Greg Corujo
+Lab5 survey page
+This Webpage is a Customer survey for a car dealership.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+      
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+        /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+        .navbar {
+          margin-bottom: 50px;
+          border-radius: 0;
+        }
+
+        /* Remove the jumbotron's default bottom margin */ 
+         .jumbotron {
+          margin-bottom: 0;
+             color: firebrick;
+             background-color: white;
+             font-family: cursive
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+          background-color: #f2f2f2;
+          padding: 25px;
+        }
+        .carousel-inner img {
+          width: 100%; /* Set width to 100% */
+          margin: auto;
+          min-height:200px;
+        }
+  </style>
+  </head>
+
+  <body>
+    <div class="jumbotron text-center">
+        <div class="container">
+          <div class= "row">
+              <div class="col-sm-4">
+                <img src="images/subaru_wrx___clean_by_dangeruss.jpg" alt="" style="height:100%; width:100%;">
+              </div>
+              <div class= "col-sm-6">
+                <h1>Bob's Hyundai &amp; Subaru</h1>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="lab5_main.html">Home</a></li>
+        <li><a href="lab5_main.html#products">Products</a></li>
+        <li><a href="#contactSales" data-toggle="modal">Contact Sales</a></li>
+        <li><a href="lab5_survey.html">Survey</a></li>
+      </ul>
+        
+        
+        <div id="contactSales" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Contact Sales</h4>
+              </div>
+                
+              <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                    <label for="pwd">Name:</label>
+                    <input type="name" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  
+                  <div class="checkbox">
+                    <label><input type="checkbox">Send me new deals</label>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                </div>
+                
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+  </div>
+</nav>
+    <br>
+      <div class="container survey">
+        <article>
+            <section>
+                <h2><u>Customer Satisfaction Survey</u></h2>
+                
+                <br>
+            </section>
+            <div>
+                <br>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label>Enter Full Name:</label>
+                        <input type="text" id="fullName">
+                        
+                    </div>
+                </form>
+            <br>
+            </div>
+            <div>
+                <h3>Question 1</h3>
+                <br>
+                <p>How did you hear about our dealership?</p>
+                <select id="a1">
+                    <option></option>
+                    <option>Our Website</option>
+                    <option>Other Internet Source</option>
+                    <option>TV Advertisement</option>
+                    <option>Newspaper</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h3>Question 2</h3>
+                <br>
+                <p>Do you feel your associate thoughtfully answered all of your questions in a thorough manner?</p>
+                <select id="a2">
+                    <option></option>
+                    <option>Yes</option>
+                    <option>No</option> 
+                </select><br>
+                <p>No (If no explain why)</p>
+                <textarea name="message" rows="5" cols="20"></textarea>
+            </div>
+            <br>
+            <div>
+                <h3>Question 3</h3>
+                <br>
+                <p>Did your associate show you vehicles that provided solutions to your driving needs?</p>
+                <select id="a3">
+                    <option></option>
+                    <option>Yes</option>
+                    <option>No</option> 
+                </select><br>
+                <p>No (If no explain why)</p>
+                <textarea name="message" rows="5" cols="20"></textarea>
+            </div>
+            <br>
+            <div>
+                <h3>Question 4</h3>
+                <br>
+                <p>Did your associate provide pricing options that met your needs?</p>
+                <select id="a4">
+                    <option></option>
+                    <option>Yes</option>
+                    <option>No</option> 
+                </select>
+            </div>
+            <br>
+            <div>
+                <h3>Question 5</h3>
+                <br>
+                <p>How would you rate the level of knowledge demonstrated by your associate?</p>
+                <select id="a5">
+                    <option></option>
+                    <option>Outstanding</option>
+                    <option>Very Good</option> 
+                    <option>Good</option>
+                    <option>Unsatisfactory</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h3>Question 6</h3>
+                <br>
+                <p>When purchasing a new vehicle what features are most important to you?<br>Check all that apply:</p>
+                <input type="checkbox" name="feature" value="Safety">Safety<br>
+                <input type="checkbox" name="feature" value="Rear-view Camera">Rear-view Camera<br>
+                <input type="checkbox" name="feature" value="Fuel Efficient">Fuel Efficient<br>
+                <input type="checkbox" name="feature" value="Bluetooth Connectivity">Bluetooth Connectivity<br>
+                <input type="checkbox" name="feature" value="Performance">Performance<br>
+                <input type="checkbox" name="feature" value="Climate Control">Climate Control<br>
+                <input type="checkbox" name="feature" value="Comfort">Comfort<br>
+                <input type="checkbox" name="feature" value="Keyless Entry">Keyless Entry<br>
+                <input type="checkbox" name="feature" value="Family Friendly">Family Friendly<br>
+                <input type="checkbox" name="feature" value="Parking System">Parking System<br>
+            </div>
+            <br>
+            <div>
+                <h3>Question 7</h3>
+                <br>
+                <p>Do you have any suggestions on how we could have improved your experience?</p>
+                <select id="a7">
+                    <option></option>
+                    <option>Yes</option>
+                    <option>No</option> 
+                </select><br>
+                <textarea name="message" rows="5" cols="20"></textarea>
+            </div>
+            <br><br><br>
+            <section>
+                <button type="button" onclick="submitSurvey()" class="btn btn-lg btn-primary">Submit</button>
+            <button type="button" class="btn btn-lg btn-primary">Cancel</button>
+        </section>
+        </article>
+          </div>
+      <p id="test"></p>
+      <br><br><br>
+      
+      <script src="lab5.js"></script>
+      
+      <footer class="container-fluid"> 
+          <div class="container">   
+              <h3 class="text text-center"><u>Contact Our Sales Team</u></h3>
+              <br>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Location</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10915 Hardin Valley Rd in Knoxville, TN</td>
+                    <td>865-555-5555</td>
+                    <td>bob@bobshyundaiandsubaru.com</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+        </footer>
+</body>
+</html>
